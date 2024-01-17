@@ -31,7 +31,11 @@ const VideoGamePage = () => {
                 />
             </div>
             {/* mets les nots ici dans une div row */}
-            <ItemsGame text={"GTA VI"}/>
+            <div className="flex items-center justify-center h-60">
+                <ItemsGame text={"GTA VI"}/>
+                <ItemsGame text={"poipoipoiopipoijojkjmljljl"}/>
+                <ItemsGame text={"GTA VI"}/>
+            </div>
         </div>
     );
 };

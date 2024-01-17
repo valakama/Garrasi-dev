@@ -26,6 +26,7 @@ module.exports = {
       backgroundImage: {
         'hero-image': "url('./assets/hero-image.jpg')",
         'hero-Videogame': "url('./assets/hero-Videogame.jpg')",
+        'iconGta': "url('./assets/Games/GTA.jpg')",
       },
     },
   },
