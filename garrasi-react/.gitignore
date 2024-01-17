@@ -1,0 +1,36 @@
+# Dépendances
+/node_modules
+
+# Fichiers de build
+/build
+/dist
+
+# Fichiers de cache
+/.cache
+/.parcel-cache
+
+# Fichiers temporaires
+/tmp
+/temp
+
+# Fichiers de configuration de l'environnement
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Fichiers de journalisation
+npm-debug.log
+yarn-error.log
+
+# Fichiers éditeurs
+/.idea
+/.vscode
+*.swp
+*.swo
+*.sublime-workspace
+
+# Fichiers spécifiques au système d'exploitation
+.DS_Store
+Thumbs.db

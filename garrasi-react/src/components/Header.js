@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Note from "./Note"
 const Header = () => {
     return (
         <div className={`flex flex-row justify-between py-5 px-10 items-center  relative`}>
@@ -15,6 +16,7 @@ const Header = () => {
           {/* <li ><ButtonAction color='#27917E' text='Automatiser'/></li> */}
         </Link>
         </ul>
+        <Note/>
       </div>
     )
 }
