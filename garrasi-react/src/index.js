@@ -8,11 +8,16 @@ import "./index.css";
 import HomePage from "./pages/HomePage";
 import VideoGamePage from "./pages/VideoGamePage";
 import Note from "./components/Note";
+import SubjectPage from "./pages/SubjectPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage/>,
+  },
+  {
+    path: "/subject",
+    element: <SubjectPage/>
   },
   {
     path: "/videoGame",
