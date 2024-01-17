@@ -3,7 +3,7 @@ import LikesIndicator from './LikesIndicator';
 
 const Note = ({ fullName, imageLink, time, text, stars }) => {
   return (
-    <div className="bg-white rounded-2xl p-6 mx-auto my-5 border w-[600px]">
+    <div className="bg-white rounded-2xl p-6 mx-48 my-5 border w-[600px]">
       <div className="flex flex-col h-full w-full justify-between">
         <div className="flex justify-between">
           <div className="flex items-center">
@@ -11,7 +11,7 @@ const Note = ({ fullName, imageLink, time, text, stars }) => {
               <img className="rounded-full h-full w-full object-cover" src={imageLink} alt='img'></img>
             </div>
             <div className="ml-4">
-              <h2 className="text-lg font-semibold">{fullName}</h2>
+              <h2 className="text-black text-lg font-semibold">{fullName}</h2>
               <span className="text-gray-500 text-sm">{time}</span>
             </div>
           </div>
