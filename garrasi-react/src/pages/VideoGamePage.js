@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import ItemsGame from "../components/ItemsGame";
 import Note from "../components/Note";
+import { Link } from "react-router-dom";
 const VideoGamePage = () => {
     return (
         <div className="flex flex-col">
@@ -23,7 +24,9 @@ const VideoGamePage = () => {
             </div>
             <div className="flex  items-center justify-center ">
                 <div className="flex flex-wrap  justify-center w-1/2 ">
-                    <ItemsGame text={"GTA VI"} icon={"bg-iconGTA"}/>
+                    <Link to={"/subject"}>
+                        <ItemsGame text={"GTA VI"} icon={"bg-iconGTA"}/>
+                    </Link>
                     <ItemsGame text={"Minecraft"} icon={"bg-iconMinecraft"}/>
                     <ItemsGame text={"Mario"} icon={"bg-iconMario"}/>
                     <ItemsGame text={"Geometry Dash"} icon={"bg-iconGeometry"}/>
