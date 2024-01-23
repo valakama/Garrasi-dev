@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
 import LikesIndicator from './LikesIndicator';
 
-const SendNote = ({ fullName, imageLink, stars }) => {
-  const [note, setNote] = useState(""); // État pour le contenu de la note
+const SendNote = ({ fullName, imageLink, stars, notes, setNotes }) => {
+  const [note, setNote] = useState("");
 
   const handleInputChange = (event) => {
     setNote(event.target.value);
   };
 
-  // Fonction pour simuler l'envoi de la note
   const sendNote = () => {
-    console.log("Note envoyée :", note);
-    // Ici, ajouter la logique pour envoyer la note à votre serveur ou API
+    if (note !== "") {
+      const newNote = {
+        fullName: fullName,
+        imageLink: imageLink,
+        time: "À l'instant",
+        text: note,
+        stars: stars
+      };
+      setNotes([newNote, ...notes]);
+      setNote("");
+    }
   };
 
   return (
