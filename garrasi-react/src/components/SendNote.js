@@ -23,7 +23,7 @@ const SendNote = ({ fullName, imageLink, stars, notes, setNotes }) => {
   };
 
   return (
-    <div className="bg-white rounded-2xl p-6 mx-48 my-5 border w-[600px] shadow-sm">
+    <div className="bg-white rounded-2xl p-6 my-5 border w-[600px] shadow-sm">
       <div className="flex flex-col h-full w-full justify-between">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
