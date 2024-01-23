@@ -7,7 +7,7 @@ const VideoGamePage = () => {
         <div className="flex flex-col">
             <div className="h-[500px] bg-hero-Videogame bg-cover text-white">
                 <div className="bg-black bg-opacity-50 h-full">
-                    <Header></Header>
+                    <Header  isTextWhite={true}></Header>
                   <div className="flex flex-col h-[360px] items-center pt-24">
                     <h1 className="lg:text-7xl md:text-5xl sm:text-5xl text-3xl font-bold">
                       Jeux vidéo

@@ -32,7 +32,7 @@ function SubjectPage() {
 
   return (
     <div className="h-[100vh] text-white">
-      <Header></Header>
+      <Header  isTextWhite={false}></Header>
       <div className="flex flex-row md:pl-24 h-[10%] justify-center md:items-start sm:items-center items-center mx-32">
         <Subject subjectName={"GTA VI"} imageLink={"https://static.fnac-static.com/multimedia/Images/FD/Comete/173301/CCP_IMG_1200x800/2305648.jpg"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl."}/>
         <div className="overflow-auto h-[80vh] w-full">

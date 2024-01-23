@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LikesIndicator from './LikesIndicator';
+import { FiSend } from "react-icons/fi";
 
 const Note = ({ fullName, imageLink, time, text, stars }) => {
 
@@ -32,20 +33,16 @@ const Note = ({ fullName, imageLink, time, text, stars }) => {
           {text}
         </p>
         <div className="flex flex-col mt-4">
-          <textarea
-            placeholder="Écrire un commentaire..."
-            className="border p-2 text-black resize-none"
-            value={inputComment}
-            onChange={(e) => setInputComment(e.target.value)}
-            rows="2"
-          />
-          <button
-            onClick={() => addComment(inputComment)}
-            className={`text-white font-semibold rounded-lg mt-2 py-2 px-4 ${inputComment.trim() === "" ? "bg-gray-500 cursor-not-allowed" : "bg-[#0881A7] cursor-pointer"}`}
-            disabled={inputComment.trim() === ""} // Désactiver le bouton si l'entrée est vide
-          >
-            Ajouter un commentaire
-          </button>
+          <div className='flex flex-row items-center'>
+            <textarea
+              placeholder="Écrire un commentaire..."
+              className="border p-2 text-black resize-none w-[90%] h-12"
+              value={inputComment}
+              onChange={(e) => setInputComment(e.target.value)}
+              rows="2"
+              />
+          <FiSend className='m-5' size={25} color='black' onClick={() => addComment(inputComment)}/>
+          </div>
         </div>
         <div className="mt-4">
           {comments.map((comment, index) => (
