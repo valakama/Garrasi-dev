@@ -2,7 +2,38 @@ import Header from "../components/Header";
 import ItemsGame from "../components/ItemsGame";
 import Note from "../components/Note";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const VideoGamePage = () => {
+
+    const [input, setInput] = useState("");
+    const [games, setGames] = useState([
+        { name: "GTA VI", icon: "bg-iconGTA" },
+        { name: "Minecraft", icon: "bg-iconMinecraft" },
+        { name: "Mario", icon: "bg-iconMario" },
+        { name: "Geometry Dash", icon: "bg-iconGeometry" },
+        { name: "Zelda", icon: "bg-iconZelda" },
+        { name: "Terraria", icon: "bg-iconTerraria" },
+        { name: "Uncharted", icon: "bg-iconUncharted" },
+        { name: "FIFA", icon: "bg-iconFifa" },
+    ]);
+
+    // Nouveau gestionnaire pour la touche Entrée
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            handleSearch();
+        }
+    };
+
+    // Filtrer les jeux en fonction de l'entrée
+    const [filteredGames, setFilteredGames] = useState(games);
+
+    const handleSearch = () => {
+        const results = games.filter(game => 
+            game.name.toLowerCase().includes(input.toLowerCase())
+        );
+        setFilteredGames(results);
+    };
+
     return (
         <div className="flex flex-col">
             <div className="h-[500px] bg-hero-Videogame bg-cover text-white">
@@ -18,22 +49,25 @@ const VideoGamePage = () => {
             <div className="flex flex-row justify-center items-center h-40">
                 <input
                     type="text"
-                    className="rounded-3xl p-2 border border-gray-300 w-1/3 px-5"
+                    className="rounded-3xl p-2 border border-gray-300 w-1/4 px-5"
                     placeholder="Recherchez vos jeux ..."
-                    />
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    onKeyDown={handleKeyDown}
+                />
             </div>
             <div className="flex  items-center justify-center ">
                 <div className="flex flex-wrap  justify-center w-1/2 ">
-                    <Link to={"/subject"}>
-                        <ItemsGame text={"GTA VI"} icon={"bg-iconGTA"}/>
-                    </Link>
-                    <ItemsGame text={"Minecraft"} icon={"bg-iconMinecraft"}/>
-                    <ItemsGame text={"Mario"} icon={"bg-iconMario"}/>
-                    <ItemsGame text={"Geometry Dash"} icon={"bg-iconGeometry"}/>
-                    <ItemsGame text={"Zelda"} icon={"bg-iconZelda"}/>
-                    <ItemsGame text={"Terraria"} icon={"bg-iconTerraria"}/>
-                    <ItemsGame text={"Uncharted"} icon={"bg-iconUncharted"}/>
-                    <ItemsGame text={"FIFA"} icon={"bg-iconFifa"}/>
+                    {filteredGames.map(game => (
+                        <Link to={"/subject"} key={game.name}>
+                            <ItemsGame text={game.name} icon={game.icon} />
+                        </Link>
+                    ))}
+                    {filteredGames.length === 0 && (
+                        <p className="text-center text-2xl text-gray-500 w-full">
+                            Aucun jeu trouvé
+                        </p>
+                    )}
                 </div>
             </div>
             <div className="flex justify-center items-center h-32 ">
