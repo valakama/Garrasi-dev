@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import ButtonAction from "./ButtonAction";
 import logoWhite from "../assets/logoWhite.png";
 import logoBlack from "../assets/logoBlack.png";
+import { MdAccountCircle } from "react-icons/md";
 
 const Header = ({ isTextWhite }) => {
   const textColorClass = isTextWhite ? "text-white" : "text-black";
@@ -26,8 +27,11 @@ const Header = ({ isTextWhite }) => {
           <li className={`lg:mx-8 text-xl font-bold ${textColorClass}`}>Technologie</li>
         </Link>
         <Link to={"/videoGame"}>
-          <ButtonAction onClick={() => console.log()} text={"Donnez votre avis"}/>
+        <ButtonAction onClick={()=>console.log()} text={"Donnez votre avis"} isTextWhite={isTextWhite}/>
         </Link>
+        <div className="h-15 w-15 rounded-full flex items-center justify-center">
+          <MdAccountCircle size={60} color=""/>
+        </div>
       </ul>
     </div>
   );
