@@ -9,21 +9,21 @@ function SubjectPage() {
   const [notes, setNotes] = useState([
     {
       "fullName": "John Doe",
-      "imageLink": "https://static.fnac-static.com/multimedia/Images/FD/Comete/173301/CCP_IMG_1200x800/2305648.jpg",
+      "imageLink": "https://i.pinimg.com/236x/a5/67/94/a567940c61eb580455d8f886f55d21b1.jpg",
       "time": "Il y a 2 heures",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl.",
       "stars": 3
     },
     {
       "fullName": "John Doe",
-      "imageLink": "https://static.fnac-static.com/multimedia/Images/FD/Comete/173301/CCP_IMG_1200x800/2305648.jpg",
+      "imageLink": "https://i.pinimg.com/236x/a5/67/94/a567940c61eb580455d8f886f55d21b1.jpg",
       "time": "Il y a 2 heures",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl.",
       "stars": 3
     },
     {
       "fullName": "John Doe",
-      "imageLink": "https://static.fnac-static.com/multimedia/Images/FD/Comete/173301/CCP_IMG_1200x800/2305648.jpg",
+      "imageLink": "https://i.pinimg.com/236x/a5/67/94/a567940c61eb580455d8f886f55d21b1.jpg",
       "time": "Il y a 2 heures",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl.",
       "stars": 3
@@ -34,9 +34,9 @@ function SubjectPage() {
     <div className="h-[100vh] text-white">
       <Header  isTextWhite={false}></Header>
       <div className="flex flex-row md:pl-24 h-[10%] justify-center md:items-start sm:items-center items-center mx-32">
-        <Subject subjectName={"GTA VI"} imageLink={"https://static.fnac-static.com/multimedia/Images/FD/Comete/173301/CCP_IMG_1200x800/2305648.jpg"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl."}/>
+        <Subject subjectName={"GTA VI"} imageLink={"https://i.pinimg.com/236x/a5/67/94/a567940c61eb580455d8f886f55d21b1.jpg"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl. Donec euismod, nisl eget fermentum ultricies, nunc nisl ultricies nunc, eu ultricies nisl nisl eu nisl."}/>
         <div className="bottom-0 left-36 mt-1 fixed">
-          <SendNote fullName={"John Doe"} imageLink={"https://static.fnac-static.com/multimedia/Images/FD/Comete/173301/CCP_IMG_1200x800/2305648.jpg"} stars={3} notes={notes} setNotes={setNotes}/>
+          <SendNote fullName={"John Doe"} imageLink={"https://i.pinimg.com/236x/a5/67/94/a567940c61eb580455d8f886f55d21b1.jpg"} stars={3} notes={notes} setNotes={setNotes}/>
         </div>
         <div className="overflow-auto h-[80vh] w-full">
           <div className="flex flex-col w-full p-12 items-center">

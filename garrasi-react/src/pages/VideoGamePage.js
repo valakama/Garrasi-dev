@@ -83,7 +83,7 @@ const VideoGamePage = () => {
                 }
                 stars={4}
                 time={"il y a 2 jours"}
-                imageLink={"https://www.gala.fr/imgre/fit/~1~gal~2023~11~20~a77b72d7-fde4-4fb1-af01-f64492bf244b.jpeg/1725x1194/quality/80/eve-gilles-miss-france-2024.jpeg"}
+                imageLink={"https://i.pinimg.com/236x/a5/67/94/a567940c61eb580455d8f886f55d21b1.jpg"}
                 />
                                 <Note fullName={"Valentin Duban"} text={
                     "lorem ipsum dolor sit amet, consectetur adipiscing elit.\
@@ -94,7 +94,7 @@ const VideoGamePage = () => {
                 }
                 stars={4}
                 time={"il y a 2 jours"}
-                imageLink={"https://www.gala.fr/imgre/fit/~1~gal~2023~11~20~a77b72d7-fde4-4fb1-af01-f64492bf244b.jpeg/1725x1194/quality/80/eve-gilles-miss-france-2024.jpeg"}
+                imageLink={"https://i.pinimg.com/236x/a5/67/94/a567940c61eb580455d8f886f55d21b1.jpg"}
                 />
             </div>
             {/* mets les nots ici dans une div row */}
