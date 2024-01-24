@@ -41,7 +41,7 @@ const Note = ({ fullName, imageLink, time, text, stars }) => {
               onChange={(e) => setInputComment(e.target.value)}
               rows="2"
               />
-          <FiSend className='m-5' size={25} color='black' onClick={() => addComment(inputComment)}/>
+          <FiSend className='m-5 cursor-pointer' size={25} color='black' onClick={() => addComment(inputComment)}/>
           </div>
         </div>
         <div className="mt-4">
